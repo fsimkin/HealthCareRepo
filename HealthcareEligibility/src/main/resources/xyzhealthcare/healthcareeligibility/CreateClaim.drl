@@ -5,6 +5,7 @@ import xyzhealthcare.healthcareeligibility.*;
 rule "Create Claim"
 ruleflow-group "EligibilityGroup"
 dialect "mvel"
+salience 20
 when
 then
 Claim claim = new Claim();
